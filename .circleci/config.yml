@@ -7,7 +7,7 @@ jobs:
     docker:
       - image: cirrusci/flutter
     steps:
-      - checkout:
+      - checkout
       - run: flutter doctor
       - run: flutter build apk --release
       - store_artifacts:
